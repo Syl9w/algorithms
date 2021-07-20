@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		524AFE4D2661422800E5CCB0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524AFE4C2661422800E5CCB0 /* main.cpp */; };
+		524AFE78266143C400E5CCB0 /* algs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524AFE77266143C400E5CCB0 /* algs.cpp */; };
+		524AFE7C266E56DB00E5CCB0 /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524AFE7B266E56DB00E5CCB0 /* Graph.cpp */; };
+		524AFE81266F8D2200E5CCB0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524AFE4C2661422800E5CCB0 /* main.cpp */; };
+		5290DFDA267F0469002FBD30 /* depth-first.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5290DFD8267F0469002FBD30 /* depth-first.cpp */; };
+		5290DFDD267F0AD0002FBD30 /* breadth-first.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5290DFDB267F0AD0002FBD30 /* breadth-first.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		524AFE492661422800E5CCB0 /* fp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fp; sourceTree = BUILT_PRODUCTS_DIR; };
 		524AFE4C2661422800E5CCB0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		524AFE77266143C400E5CCB0 /* algs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = algs.cpp; sourceTree = "<group>"; };
+		524AFE79266143C900E5CCB0 /* algs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = algs.h; sourceTree = "<group>"; };
+		524AFE7B266E56DB00E5CCB0 /* Graph.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
+		524AFE7D266E7AAA00E5CCB0 /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
+		5290DFD8267F0469002FBD30 /* depth-first.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "depth-first.cpp"; sourceTree = "<group>"; };
+		5290DFD9267F0469002FBD30 /* depth-first.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "depth-first.h"; sourceTree = "<group>"; };
+		5290DFDB267F0AD0002FBD30 /* breadth-first.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "breadth-first.cpp"; sourceTree = "<group>"; };
+		5290DFDC267F0AD0002FBD30 /* breadth-first.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "breadth-first.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +69,15 @@
 		524AFE4B2661422800E5CCB0 /* fp */ = {
 			isa = PBXGroup;
 			children = (
+				524AFE77266143C400E5CCB0 /* algs.cpp */,
 				524AFE4C2661422800E5CCB0 /* main.cpp */,
+				524AFE79266143C900E5CCB0 /* algs.h */,
+				524AFE7B266E56DB00E5CCB0 /* Graph.cpp */,
+				524AFE7D266E7AAA00E5CCB0 /* Graph.h */,
+				5290DFD8267F0469002FBD30 /* depth-first.cpp */,
+				5290DFD9267F0469002FBD30 /* depth-first.h */,
+				5290DFDB267F0AD0002FBD30 /* breadth-first.cpp */,
+				5290DFDC267F0AD0002FBD30 /* breadth-first.h */,
 			);
 			path = fp;
 			sourceTree = "<group>";
@@ -119,7 +139,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				524AFE4D2661422800E5CCB0 /* main.cpp in Sources */,
+				5290DFDD267F0AD0002FBD30 /* breadth-first.cpp in Sources */,
+				524AFE78266143C400E5CCB0 /* algs.cpp in Sources */,
+				524AFE81266F8D2200E5CCB0 /* main.cpp in Sources */,
+				5290DFDA267F0469002FBD30 /* depth-first.cpp in Sources */,
+				524AFE7C266E56DB00E5CCB0 /* Graph.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +200,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -228,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
